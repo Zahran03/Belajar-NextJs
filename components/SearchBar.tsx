@@ -6,7 +6,7 @@ const SearchBar = () => {
   const [manufacturer, setManufacturer] = useState("");
   const handleSearch = () => {};
   return (
-    <form className="searchbbar">
+    <form className="searchbar">
       <div className="searchbar__item">
         <SearchManufacturer
           manufacturer={manufacturer}
