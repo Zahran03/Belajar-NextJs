@@ -7,7 +7,7 @@
 //   },
 // };
 
-import { CarProps } from "@/types";
+import { CarProps, FilterProps } from "@/types";
 
 // try {
 //   const response = await fetch(url, options);
@@ -17,7 +17,7 @@ import { CarProps } from "@/types";
 //   console.error(error);
 // }
 
-export async function fetchCars() {
+export async function fetchCars(filters: FilterProps) {
   const headers = {
     "x-rapidapi-key": "a0d63a94eamsh64195cecef77700p1d4ccajsnf8965ad19949",
     "x-rapidapi-host": "cars-by-api-ninjas.p.rapidapi.com",
