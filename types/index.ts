@@ -15,10 +15,6 @@ export interface SearchManufacturerProps {
   setManufacturer: (manufacturer: string) => void;
 }
 
-export interface CustomFilterProps {
-  title: string;
-}
-
 export interface CarProps {
   city_mpg: 23;
   class: string;
@@ -44,4 +40,14 @@ export interface FilterProps {
 
 export interface HomeProps {
   searchParams: FilterProps;
+}
+
+export interface OptionProps {
+  title: string;
+  value: string;
+}
+
+export interface CustomFilterProps {
+  title: string;
+  options: OptionProps[];
 }
